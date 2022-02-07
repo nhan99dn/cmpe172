@@ -1,4 +1,4 @@
-REF:  https://spring.io/quickstart
+package com.example.demodocker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class DemoXXXApplication {
+public class DemoDockerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoXXXApplication.class, args);
+		SpringApplication.run(DemoDockerApplication.class, args);
 	}
 
 	@GetMapping("/hello")
@@ -19,4 +19,3 @@ public class DemoXXXApplication {
 		return String.format("Hello %s!", name);
 	}
 }
-
